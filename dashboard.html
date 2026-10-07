@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102B40">
+  <title>Dashboard — Stackly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="stackly_.webp"><link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <aside class="dashboard-sidebar">
+    <a class="dashboard-brand" href="index.html"><img src="stackly_.webp" alt="Stackly"></a>
+    <div class="dashboard-nav-label">WORKSPACE</div>
+    <nav class="dashboard-nav" aria-label="Dashboard navigation">
+      <a class="selected" href="dashboard.html"><span>⌂</span> Overview</a>
+      <a data-customer-only href="shop.html"><span>▧</span> Shop essentials</a>
+      <a data-customer-only href="contact.html"><span>♡</span> Get support</a>
+      <a data-admin-only hidden href="shop.html"><span>▧</span> Store catalogue</a>
+      <a data-admin-only hidden href="contact.html"><span>✉</span> Customer support</a>
+      <a href="journal.html"><span>▤</span> Journal</a>
+    </nav>
+    <div class="dashboard-sidebar-bottom"><div class="dashboard-help"><span>Need a hand?</span><p>Our team is here for everyday questions.</p><a href="contact.html">Contact Stackly →</a></div><a class="dashboard-signout" id="dashboard-signout" href="login.html"><span>↪</span> Sign out</a></div>
+  </aside>
+  <main class="dashboard-main" id="dashboard-root">
+    <header class="dashboard-topbar"><div><span class="dashboard-breadcrumb">Stackly <b>/</b> Dashboard</span></div><div class="dashboard-top-user"><span class="dashboard-avatar">S</span><span><b id="dashboard-user-name">Stackly customer</b><small id="dashboard-role">CUSTOMER ACCOUNT</small></span></div></header>
+    <div class="dashboard-content">
+      <section class="dashboard-welcome"><div><span class="dashboard-kicker" id="dashboard-welcome-kicker">YOUR STACKLY SPACE</span><h1 id="dashboard-greeting">Welcome back</h1><p id="dashboard-subtitle">Your everyday care, all together in one place.</p></div><a class="dashboard-shop-link" id="dashboard-primary-action" href="shop.html">Explore the shop <span>→</span></a></section>
+      <div class="dashboard-preview-note"><span>i</span><p><b>Preview dashboard</b> This demo dashboard is not connected to a secure account or live store data.</p></div>
+      <section class="dashboard-metrics" data-customer-only aria-label="Account highlights">
+        <article class="dashboard-metric"><span class="dashboard-metric-icon mint">♡</span><div><small>YOUR ACCOUNT</small><h2>Everyday care, simplified</h2><p>Find the essentials you need in one thoughtful place.</p><a href="about.html">Get to know Stackly →</a></div></article>
+        <article class="dashboard-metric"><span class="dashboard-metric-icon sand">▧</span><div><small>YOUR NEXT STEP</small><h2>Browse your favourites</h2><p>Explore wellness, personal care, and first-aid essentials.</p><a href="shop.html">Shop essentials →</a></div></article>
+        <article class="dashboard-metric"><span class="dashboard-metric-icon blue">✉</span><div><small>HERE TO HELP</small><h2>Questions? We’re here.</h2><p>Reach out for general product or order support.</p><a href="contact.html">Contact our team →</a></div></article>
+      </section>
+      <section class="dashboard-metrics dashboard-admin-metrics" data-admin-only hidden aria-label="Store overview">
+        <article class="dashboard-metric"><span class="dashboard-metric-icon mint">▧</span><div><small>CATALOGUE</small><h2>Product catalogue</h2><p>Explore the current Stackly product selection.</p><a href="shop.html">View shop →</a></div></article>
+        <article class="dashboard-metric"><span class="dashboard-metric-icon sand">✉</span><div><small>SUPPORT</small><h2>Customer care</h2><p>Find contact details and branch information.</p><a href="contact.html">Open contact page →</a></div></article>
+        <article class="dashboard-metric"><span class="dashboard-metric-icon blue">▤</span><div><small>EDITORIAL</small><h2>Wellness journal</h2><p>Read the latest everyday care articles.</p><a href="journal.html">View journal →</a></div></article>
+      </section>
+      <section class="dashboard-lower-grid" data-customer-only>
+        <article class="dashboard-panel dashboard-activity"><div class="dashboard-panel-heading"><div><span class="dashboard-kicker">A GOOD PLACE TO START</span><h2>Explore Stackly</h2></div><span class="dashboard-panel-mark">✦</span></div><a class="dashboard-list-link" href="shop.html"><span class="dashboard-list-icon">01</span><span><b>Shop everyday essentials</b><small>Browse thoughtful picks for your routine.</small></span><i>→</i></a><a class="dashboard-list-link" href="services.html"><span class="dashboard-list-icon">02</span><span><b>Discover our services</b><small>Learn how Stackly can support you.</small></span><i>→</i></a><a class="dashboard-list-link" href="journal.html"><span class="dashboard-list-icon">03</span><span><b>Read the journal</b><small>Helpful notes for everyday wellbeing.</small></span><i>→</i></a></article>
+        <article class="dashboard-panel dashboard-support-panel"><div class="dashboard-support-art"><img src="assets/photo-1607619056574-7b8d3ee536b2.webp" alt="Everyday wellness essentials"></div><div class="dashboard-support-copy"><span class="dashboard-kicker">HERE WHEN YOU NEED US</span><h2>Good care starts with a conversation.</h2><p>Our team can help with general product, order, and service questions.</p><a href="contact.html">Talk to our team <span>→</span></a></div></article>
+      </section>
+      <section class="dashboard-lower-grid" data-admin-only hidden>
+        <article class="dashboard-panel dashboard-activity"><div class="dashboard-panel-heading"><div><span class="dashboard-kicker">STORE WORKSPACE</span><h2>Keep the storefront clear</h2></div><span class="dashboard-panel-mark">▧</span></div><a class="dashboard-list-link" href="shop.html"><span class="dashboard-list-icon">01</span><span><b>Review catalogue ranges</b><small>Check wellness, personal-care, and first-aid categories.</small></span><i>→</i></a><a class="dashboard-list-link" href="journal.html"><span class="dashboard-list-icon">02</span><span><b>Prepare helpful content</b><small>Keep product and journal information easy to understand.</small></span><i>→</i></a><a class="dashboard-list-link" href="contact.html"><span class="dashboard-list-icon">03</span><span><b>Check support details</b><small>Make contact routes and branch details easy to find.</small></span><i>→</i></a></article>
+        <article class="dashboard-panel dashboard-support-panel"><div class="dashboard-support-art"><img src="assets/photo-1556761175-b413da4baf72.webp" alt="Team planning customer support"></div><div class="dashboard-support-copy"><span class="dashboard-kicker">CUSTOMER EXPERIENCE</span><h2>Make the next step clear.</h2><p>Keep product details accurate, make support options visible, and route health questions to qualified professionals.</p><a href="contact.html">Review support information <span>→</span></a></div></article>
+      </section>
+      <section class="dashboard-pages-section" aria-labelledby="dashboard-pages-title">
+        <div class="dashboard-pages-heading"><div><span class="dashboard-kicker">YOUR STACKLY DIRECTORY</span><h2 id="dashboard-pages-title">Explore every page</h2><p>Find the right place to shop, learn, or get help.</p></div><span class="dashboard-panel-mark">✦</span></div>
+        <div class="dashboard-pages-grid">
+          <a class="dashboard-page-card" href="index.html"><img loading="lazy" src="assets/photo-1576091160399-112ba8d25d1d.webp" alt="Wellness products on a bright shelf"><span class="dashboard-page-card-copy"><small>START HERE</small><b>Home</b><span>See what Stackly is all about.</span><i>Explore home →</i></span></a>
+          <a class="dashboard-page-card" href="shop.html"><img loading="lazy" src="assets/photo-1608248543803-ba4f8c70ae0b.webp" alt="Personal care essentials"><span class="dashboard-page-card-copy"><small>EVERYDAY ESSENTIALS</small><b>Shop</b><span>Browse wellness and personal care.</span><i>Visit the shop →</i></span></a>
+          <a class="dashboard-page-card" href="services.html"><img loading="lazy" src="assets/photo-1584982751601-97dcc096659c.webp" alt="Pharmacy care and consultation"><span class="dashboard-page-card-copy"><small>HOW WE HELP</small><b>Services</b><span>Learn about available pharmacy services.</span><i>View services →</i></span></a>
+          <a class="dashboard-page-card" href="about.html"><img loading="lazy" src="assets/photo-1559757175-0eb30cd8c063.webp" alt="Thoughtful everyday wellbeing"><span class="dashboard-page-card-copy"><small>OUR STORY</small><b>About Stackly</b><span>Get to know our approach to care.</span><i>Our story →</i></span></a>
+          <a class="dashboard-page-card" href="journal.html"><img loading="lazy" src="assets/photo-1505751172876-fa1923c5c528.webp" alt="Reading about health and wellbeing"><span class="dashboard-page-card-copy"><small>GOOD TO KNOW</small><b>Journal</b><span>Read practical everyday care articles.</span><i>Read the journal →</i></span></a>
+          <a class="dashboard-page-card" href="contact.html"><img loading="lazy" src="assets/photo-1556761175-b413da4baf72.webp" alt="Friendly customer support conversation"><span class="dashboard-page-card-copy"><small>WE’RE HERE</small><b>Contact</b><span>Find the right way to reach our team.</span><i>Get in touch →</i></span></a>
+          <a class="dashboard-page-card" href="login.html"><img loading="lazy" src="assets/photo-1554224155-6726b3ff858f.webp" alt="Organizing personal account details"><span class="dashboard-page-card-copy"><small>YOUR SPACE</small><b>Sign in</b><span>Open the account access preview.</span><i>Sign in →</i></span></a>
+          <a class="dashboard-page-card" href="create-account.html"><img loading="lazy" src="assets/photo-1512290923902-8a9f81dc236c.webp" alt="Getting started with a wellness routine"><span class="dashboard-page-card-copy"><small>NEW TO STACKLY</small><b>Create account</b><span>See the account registration preview.</span><i>Get started →</i></span></a>
+        </div>
+      </section>
+      <footer class="dashboard-footer"><span>© 2026 Stackly. Everyday care, made easier.</span><div class="dashboard-footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Account</a></div><div class="dashboard-social-links" aria-label="Follow Stackly">
+        <a href="404.html" aria-label="Google"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.35 12.2c0-.7-.06-1.37-.18-2.02H12v3.83h5.24a4.48 4.48 0 0 1-1.94 2.94v2.47h3.15c1.84-1.7 2.9-4.2 2.9-7.22z"/><path d="M12 21.7c2.63 0 4.84-.87 6.45-2.35l-3.15-2.47c-.87.58-1.98.93-3.3.93-2.54 0-4.69-1.71-5.46-4.02H3.28v2.55A9.74 9.74 0 0 0 12 21.7z"/><path d="M6.54 13.79A5.86 5.86 0 0 1 6.23 12c0-.62.11-1.22.31-1.79V7.66H3.28A9.7 9.7 0 0 0 2.25 12c0 1.57.38 3.05 1.03 4.34z"/><path d="M12 6.19c1.43 0 2.72.49 3.73 1.47l2.8-2.8C16.83 3.27 14.63 2.3 12 2.3a9.74 9.74 0 0 0-8.72 5.36l3.26 2.55c.77-2.31 2.92-4.02 5.46-4.02z"/></svg></a>
+        <a href="404.html" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" class="social-fill"/></svg></a>
+        <a href="404.html" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v6h4v-6h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg></a>
+        <a href="404.html" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="m10 9 5 3-5 3z" class="social-fill"/></svg></a>
+      </div></footer>
+    </div>
+    <section class="dashboard-view-content" id="dashboard-page-view" hidden aria-live="polite"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

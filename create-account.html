@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102B40">
+  <title>Create account — Stackly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="stackly_.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page register-page">
+  <header class="login-header">
+    <a href="index.html" aria-label="Stackly home"><img src="stackly_.webp" alt="Stackly"></a>
+    <a href="shop.html">Back to shop <span>→</span></a>
+  </header>
+  <main class="login-main register-main">
+    <section class="login-visual register-visual">
+      <img src="assets/photo-1607619056574-7b8d3ee536b2.webp" alt="Wellness essentials arranged for everyday care">
+      <div class="login-visual-shade"></div>
+      <div class="login-visual-copy"><span class="login-kicker">A LITTLE MORE EVERYDAY EASE</span><h1>Make room for<br><em>better care.</em></h1><p>Create your Stackly account to keep your everyday essentials close.</p><div class="login-visual-points"><span>Simple shopping</span><span>Helpful support</span></div></div>
+    </section>
+    <section class="login-panel register-panel">
+      <div class="login-card register-card">
+        <span class="login-kicker">JOIN STACKLY</span>
+        <h2>Create your account</h2>
+        <p class="login-intro">A few details to get your customer account started.</p>
+        <form id="create-account-form" class="login-form register-form" novalidate>
+          <label for="create-name">Full name</label>
+          <input id="create-name" name="name" type="text" autocomplete="name" placeholder="Your name" aria-describedby="create-name-error" required>
+          <small class="field-error" id="create-name-error" aria-live="polite"></small>
+          <label for="create-number">Phone number</label>
+          <input id="create-number" name="number" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="10" placeholder="10-digit phone number" aria-describedby="create-number-error" required>
+          <small class="field-error" id="create-number-error" aria-live="polite"></small>
+          <label for="create-email">Email address</label>
+          <input id="create-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="create-email-error" required>
+          <small class="field-error" id="create-email-error" aria-live="polite"></small>
+          <div class="login-password-heading"><label for="create-password">Password</label><span class="register-hint">8+ characters, uppercase, lowercase, number, symbol</span></div>
+          <div class="login-password-wrap"><input id="create-password" name="password" type="password" autocomplete="new-password" placeholder="Create a password" aria-describedby="create-password-error" required><button type="button" id="toggle-create-password" aria-label="Show password">Show</button></div>
+          <small class="field-error" id="create-password-error" aria-live="polite"></small>
+          <label for="create-confirm-password">Confirm password</label>
+          <div class="login-password-wrap"><input id="create-confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Enter your password again" aria-describedby="create-confirm-error" required><button type="button" id="toggle-confirm-password" aria-label="Show confirm password">Show</button></div>
+          <small class="field-error" id="create-confirm-error" aria-live="polite"></small>
+          <label class="register-terms"><input id="create-terms" type="checkbox" required><span>I agree to Stackly’s <a href="404.html">terms and privacy information</a>.</span></label>
+          <small class="field-error" id="create-terms-error" aria-live="polite"></small>
+          <button type="submit" class="login-submit"><span>Create account</span><span>→</span></button>
+          <p class="login-status" id="create-account-status" role="status" aria-live="polite">Registration is a front-end preview and is not connected yet.</p>
+          <p class="login-mode-prompt">Already have an account? <a href="login.html">Sign in</a></p>
+        </form>
+        <div class="login-security"><span>⌑</span><p>Your details stay in this form preview. Connect an authentication service to register an account.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="login-footer"><a href="contact.html">Need help?</a><span>© 2026 Stackly</span><a href="login.html">Back to sign in</a><div class="footer-socials auth-social-links" aria-label="Follow Stackly">
+        <a href="404.html" aria-label="Google"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.35 12.2c0-.7-.06-1.37-.18-2.02H12v3.83h5.24a4.48 4.48 0 0 1-1.94 2.94v2.47h3.15c1.84-1.7 2.9-4.2 2.9-7.22z"/><path d="M12 21.7c2.63 0 4.84-.87 6.45-2.35l-3.15-2.47c-.87.58-1.98.93-3.3.93-2.54 0-4.69-1.71-5.46-4.02H3.28v2.55A9.74 9.74 0 0 0 12 21.7z"/><path d="M6.54 13.79A5.86 5.86 0 0 1 6.23 12c0-.62.11-1.22.31-1.79V7.66H3.28A9.7 9.7 0 0 0 2.25 12c0 1.57.38 3.05 1.03 4.34z"/><path d="M12 6.19c1.43 0 2.72.49 3.73 1.47l2.8-2.8C16.83 3.27 14.63 2.3 12 2.3a9.74 9.74 0 0 0-8.72 5.36l3.26 2.55c.77-2.31 2.92-4.02 5.46-4.02z"/></svg></a>
+        <a href="404.html" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" class="social-fill"/></svg></a>
+        <a href="404.html" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v6h4v-6h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg></a>
+        <a href="404.html" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="m10 9 5 3-5 3z" class="social-fill"/></svg></a>
+      </div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
